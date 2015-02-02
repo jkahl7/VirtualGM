@@ -16,6 +16,9 @@
 		43852D011A7D8ADB00CF57D2 /* TeamSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43852D001A7D8ADB00CF57D2 /* TeamSelectionVC.swift */; };
 		43852D061A7D972A00CF57D2 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43852D051A7D972A00CF57D2 /* TeamCell.xib */; };
 		43852D081A7DA25C00CF57D2 /* MainMenuTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43852D071A7DA25C00CF57D2 /* MainMenuTV.swift */; };
+		43852D0A1A7EC94300CF57D2 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43852D091A7EC94300CF57D2 /* Team.swift */; };
+		43852D0C1A7ECA7300CF57D2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43852D0B1A7ECA7300CF57D2 /* Player.swift */; };
+		43852D0E1A7ECFB700CF57D2 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43852D0D1A7ECFB700CF57D2 /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		43852D001A7D8ADB00CF57D2 /* TeamSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSelectionVC.swift; sourceTree = "<group>"; };
 		43852D051A7D972A00CF57D2 /* TeamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 		43852D071A7DA25C00CF57D2 /* MainMenuTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuTV.swift; path = ../MainMenuTV.swift; sourceTree = "<group>"; };
+		43852D091A7EC94300CF57D2 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		43852D0B1A7ECA7300CF57D2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		43852D0D1A7ECFB700CF57D2 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 		43852D021A7D8AE400CF57D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				43852D091A7EC94300CF57D2 /* Team.swift */,
+				43852D0B1A7ECA7300CF57D2 /* Player.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 				43852D071A7DA25C00CF57D2 /* MainMenuTV.swift */,
 				43852D001A7D8ADB00CF57D2 /* TeamSelectionVC.swift */,
 				43852CE21A7C52D900CF57D2 /* ViewController.swift */,
+				43852D0D1A7ECFB700CF57D2 /* NetworkController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,6 +258,9 @@
 				43852CE31A7C52D900CF57D2 /* ViewController.swift in Sources */,
 				43852D011A7D8ADB00CF57D2 /* TeamSelectionVC.swift in Sources */,
 				43852CE11A7C52D900CF57D2 /* AppDelegate.swift in Sources */,
+				43852D0A1A7EC94300CF57D2 /* Team.swift in Sources */,
+				43852D0C1A7ECA7300CF57D2 /* Player.swift in Sources */,
+				43852D0E1A7ECFB700CF57D2 /* NetworkController.swift in Sources */,
 				43852D081A7DA25C00CF57D2 /* MainMenuTV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +455,7 @@
 				43852CFC1A7C52D900CF57D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43852CFD1A7C52D900CF57D2 /* Build configuration list for PBXNativeTarget "NBA_Virtual_GMTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +464,7 @@
 				43852CFF1A7C52D900CF57D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

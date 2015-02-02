@@ -12,6 +12,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" id="Mpt-ZH-Lb3" userLabel="TeamsInTrade">
+                            <rect key="frame" x="0.0" y="64" width="600" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-wp-tD4" userLabel="team0">
+                                    <rect key="frame" x="40" y="10" width="50" height="50"/>
+                                    <state key="normal" title="Button" image="ball">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="team0Remove:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="Crl-cI-s9S"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-9C-w8h" userLabel="team1">
+                                    <rect key="frame" x="120" y="10" width="50" height="50"/>
+                                    <state key="normal" title="Button" image="ball">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="team1Remove:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="KrQ-dU-Q1T"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJL-QB-dal" userLabel="team2">
+                                    <rect key="frame" x="195" y="10" width="50" height="50"/>
+                                    <state key="normal" title="Button" image="ball">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="team2Remove:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="dDh-CZ-xnr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n61-Vi-sj4" userLabel="team3">
+                                    <rect key="frame" x="277" y="10" width="50" height="50"/>
+                                    <state key="normal" title="Button" image="ball">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="team3Remove:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="r0t-Zc-x8g"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.62220270546967238" green="0.61658347228823462" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="0.086517931343022991" blue="0.093145427124158742" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="Eastern Confrence" id="SWj-2C-UlP" userLabel="Eastern Confrence">
                                 <cells>
@@ -25,30 +69,45 @@
                                                     <state key="normal" title="Button" image="boston">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="bostonClicked:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="Fwd-Qq-tqi"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9N-ac-Qy4" userLabel="Brooklyn Nets">
                                                     <rect key="frame" x="70" y="10" width="50" height="50"/>
                                                     <state key="normal" title="Button" image="brooklyn">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="brooklynClicked:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="SZn-Gw-CgL"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8g-a6-M60" userLabel="New York Knicks">
                                                     <rect key="frame" x="130" y="10" width="50" height="50"/>
                                                     <state key="normal" title="Button" image="ny">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="nyClicked:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="zxk-Wg-Up4"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wn-oU-3iH" userLabel="Philadelphia 76ers">
                                                     <rect key="frame" x="190" y="10" width="50" height="50"/>
                                                     <state key="normal" title="Button" image="philadelphia">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="philadelphiaClicked:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="QwD-bb-xEw"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAh-Zq-taO" userLabel="Toronto Raptors">
                                                     <rect key="frame" x="250" y="10" width="50" height="50"/>
                                                     <state key="normal" title="Button" image="toronto">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="torontoClicked:" destination="Gsl-CL-Ict" eventType="touchUpInside" id="2wn-8W-g2l"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -255,6 +314,18 @@
                             <outlet property="delegate" destination="Gsl-CL-Ict" id="9Ws-wk-UyR"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="boston" destination="KpX-ro-YNf" id="eCD-Gp-Jyq"/>
+                        <outlet property="brooklyn" destination="z9N-ac-Qy4" id="UiH-C5-4rx"/>
+                        <outlet property="ny" destination="y8g-a6-M60" id="elm-Ub-D1q"/>
+                        <outlet property="philadelphia" destination="1wn-oU-3iH" id="WVm-Py-P2H"/>
+                        <outlet property="team0" destination="vqa-wp-tD4" id="L0a-Pm-7xN"/>
+                        <outlet property="team1" destination="fVA-9C-w8h" id="ArQ-oc-FTv"/>
+                        <outlet property="team2" destination="BJL-QB-dal" id="q7g-M9-ehb"/>
+                        <outlet property="team3" destination="n61-Vi-sj4" id="9kB-7D-CaG"/>
+                        <outlet property="teamsInTradeView" destination="Mpt-ZH-Lb3" id="rJE-34-unk"/>
+                        <outlet property="toronto" destination="zAh-Zq-taO" id="gMp-2D-dNr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRj-ZZ-Mmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,6 +406,7 @@
     </scenes>
     <resources>
         <image name="atlanta" width="256" height="256"/>
+        <image name="ball" width="587" height="586"/>
         <image name="boston" width="250" height="250"/>
         <image name="brooklyn" width="1109" height="1109"/>
         <image name="charlotte" width="114" height="110"/>
